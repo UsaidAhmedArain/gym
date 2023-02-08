@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Usaid fitness</title>
+	<style>
+		body{
+			margin: 0px;
+			padding: 0px;
+			background-image: url('fit.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: 'Baloo Bhai 2', cursive;
+		}	
+		div img{
+			height: 60px;
+			margin: 20px;
+		}
+		#title{
+			font-size: 15px;
+			font-family: 'Baloo Bhai 2', cursive;
+			color: white;
+			margin: 13px;
+			position: absolute;
+			top: 78px;
+		}
+		ul{
+			list-style-type: none;
+			margin:30px;
+		}
+		li{
+			font-size: 20px;
+			font-family: 'baloo bhai2',cursive;
+			float: left;
+			padding: 18px;
+			margin: auto;
+		}
+		li a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover{
+			background-color: grey;
+		}
+		.main-div{
+			display: flex;
+		}
+
+		.form{
+			background-color: transparent;
+			color: white;
+			margin: 50px;
+			padding: 30px;
+			border: 2px solid black;
+			height: 350px;
+			width: 400px;
+			border-radius: 20px;
+		}
+		input{			
+			width: 100%;
+			border-color:black ;
+			color: white;
+		}
+		input[type=text]{
+			color: black;
+			background-color:white;
+		}
+
+		input[type=tele]{
+			color: black;
+			background-color: white;
+		}
+
+		input[type=email]{
+			color: black;
+			background-color: white;
+		}
+		input[type=text]:focus{
+			background-color: black;			
+			color: white;
+		}
+
+		input[type=tele]:focus{
+			background-color: black;
+			color: white;
+		}
+
+		input[type=email]:focus{
+			background-color: black;
+			color: white;
+		}
+
+		input[type=submit]{
+			width: 20%;
+			background-color: white;
+			color: black;
+			cursor: pointer;
+		}
+		input[type=submit]:focus{
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div class="main-div">
+	<div>
+		<img src="70.jpg">
+		<div id="title">Usaid Fitness Club</div>
+	</div>
+	<div>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About us</a></li>
+		<li><a href="#">Fitness Calculator</a></li>
+		<li><a href="#">Contact us</a></li>
+	</ul>		
+	</div>
+</div>
+	<div class="form">
+		<h1>Registration Form</h1>
+		<form action="get">
+			<label for="cname">Full name:</label><br>
+			<input type="text" name="cname" id="cname" placeholder="Enter your full name" required autocomplete="off"><br>
+			<label for="address">Enter your Address:</label><br>
+			<input type="text" name="address" id="address" placeholder="Enter your address" required autocomplete="off"><br>
+			<label for="phonenumber">Phone number:</label><br>
+			<input type="tele" name="phonenumber" id="phonenumber" placeholder="Enter your Phone number " required min="0" max="9" autocomplete="off"><br>
+			<label for="cemail">Email address</label><br>
+			<input type="Email" name="cemail" id="cemail" placeholder="Enter your email address" required autocomplete="off"><br>
+			<input type="submit" name="submit">
+
+		</form>
+
+	</div>
+</body>
+</html>
